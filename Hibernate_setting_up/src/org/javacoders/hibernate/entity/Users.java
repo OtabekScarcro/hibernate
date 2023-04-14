@@ -21,6 +21,9 @@ public class Users {
 	
 	@Column(name="last_name")
 	private String lastName;
+	
+	public Users() {
+	}
 
 	public Users(String username, String password, String firstName, String lastName) {
 		this.username = username;
@@ -68,4 +71,11 @@ public class Users {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
+	@Override
+	public String toString() {
+		return "Users [userId=" + userId + ", username=" + username + ", password=" + password + ", firstName="
+				+ firstName + ", lastName=" + lastName + "]";
+	}
+	
 }

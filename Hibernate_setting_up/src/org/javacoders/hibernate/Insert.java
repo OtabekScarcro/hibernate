@@ -15,7 +15,7 @@ public class Insert {
 
 		try {
 			// Create object of entity class type
-			Users user = new Users("Scarcro", "lldsds149", "Otabek", "Otaboyev");
+			Users user = new Users("user5", "lldsds149", "Xushnud", "Sadullayev");
 			// Start transaction
 			session.beginTransaction();
 			// Perform operation
